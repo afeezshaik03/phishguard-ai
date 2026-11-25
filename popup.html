@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>AI Phishing Detector</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <div class="header-title">🛡️ AI Phishing Detector</div>
+    <div class="header-sub">Real-time threat detection</div>
+  </div>
+
+  <!-- Risk Score Circle -->
+  <div class="score-section">
+    <div class="score-circle" id="scoreCircle">
+      <div class="score-number" id="scoreNumber">--</div>
+      <div class="score-label">Risk Score</div>
+    </div>
+    <div class="verdict" id="verdict">Scanning...</div>
+    <div class="risk-level" id="riskLevel"></div>
+  </div>
+
+  <!-- URL Info -->
+  <div class="url-box">
+    <div class="url-label">Current URL</div>
+    <div class="url-text" id="urlText">Loading...</div>
+  </div>
+
+  <!-- Why flagged -->
+  <div class="reasons-box" id="reasonsBox" style="display:none">
+    <div class="reasons-label">⚠️ Why flagged:</div>
+    <div id="reasonsList"></div>
+  </div>
+
+  <!-- Time checked -->
+  <div class="footer" id="footer"></div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
